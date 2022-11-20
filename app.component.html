@@ -1,0 +1,23 @@
+<!-- this is global loader -->
+<ngx-ui-loader fgsColor="#ff4081" 
+[pbThickness]="10"
+textColor="#ff4081"
+pbColor="#ff4081" text="Please wait ?"></ngx-ui-loader>
+<div class="bootstrap-wrapper">
+  <div class="container-fluid">
+    <app-navbar></app-navbar>
+  </div>
+  <div class="container-fluid">
+    <div class="container-fluid">
+      <div ngxUiLoaderBlurred [blur]="10">
+        <!-- This page content will be blurred/frosted when foreground loader is showed -->
+        <router-outlet></router-outlet>
+        <app-content></app-content>
+      </div>
+    </div>
+  </div>
+  <div class="container-fluid">
+    <app-footer></app-footer>
+  </div>
+</div>
+

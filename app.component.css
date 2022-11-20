@@ -1,0 +1,9 @@
+mat-card{
+    width: 100%;
+    overflow: scroll;
+    height: 700px;
+}
+.ov{
+    overflow: scroll;
+    height: 700px;
+}
