@@ -1,0 +1,20 @@
+<div class="row cm">
+  <div class="container-fluid">
+    <mat-card-header>Availabel Category</mat-card-header>
+    <mat-divider></mat-divider>
+    <mat-action-list>
+      <button mat-list-item class="active" routerLink="/user-dashboard/0">
+        <mat-icon mat-list-icon>menu</mat-icon>All Quizzes
+      </button>
+      <mat-divider></mat-divider>
+      <button mat-list-item [routerLink]="['/user-dashboard/',c.cid]"  *ngFor="let c of category">
+        <mat-icon mat-list-icon >quiz</mat-icon>{{ c.title }}
+        <mat-divider></mat-divider>
+      </button>
+      <button mat-list-item>
+        <mat-icon mat-list-icon (click)="logout()">logout</mat-icon
+        >Logout
+      </button>
+    </mat-action-list>
+  </div>
+</div>

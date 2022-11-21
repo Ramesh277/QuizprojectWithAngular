@@ -1,0 +1,31 @@
+<div class="bootstrap-wrapper">
+    <div class="container-fluid">
+        <mat-card>
+            <mat-card-header>
+       <mat-card-title>
+       Read The instructions of this page carefuly.
+       <mat-divider></mat-divider>
+       </mat-card-title>
+            </mat-card-header>
+            <mat-card-content class="ml-3">
+             <h1>{{quiz.title}}</h1>
+             <p>{{quiz.description}}</p>
+             <mat-divider></mat-divider>
+             <h3>Important instructions</h3>
+             <ul>
+                <li>This quiz is only for pratice purpose</li>
+                <li>You have to submit quiz within time. <b> {{quiz.numberOfQuestins * 1.2}} Minutes </b></li>
+                <li>You can attempts the quiz any number of time</li>
+             </ul>
+             <h3>Attempting Quiz</h3> 
+             <ul>
+                <li>Click <b>Start Quiz</b> button to start the quiz</li>
+                 <li>Scrol down to move to next question.</li>
+             </ul>
+            </mat-card-content>
+            <mat-card-actions class="text-center">
+            <button mat-raised-button color="primary" (click)="StartQuiz()">Start Quiz</button>
+            </mat-card-actions>
+        </mat-card>
+    </div>
+</div>
